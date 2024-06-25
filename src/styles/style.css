@@ -7,17 +7,21 @@
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 /* menu section starts */
 
 .navbar{
     padding: 17.7px 0px;
     border-bottom: none;
-    
+    transition: background-color 0.5s ease-in-out; 
 }
 
 .navbar ul li a{
-    color: white;
+    color: white !important;
     text-transform: uppercase;
     transition: all .3s ease-in;
     font-weight: bold;
@@ -37,18 +41,40 @@
     transition: all .3s ease-in;
 }
 .navbar-inverse .navbar-collapse{
+    padding-left: -12rem;
     margin-top: 5px;
     border-color: transparent !important;
 
 }
 
 
-.navbar-inverse {
-    background: transparent !important;
 
+.navbar-inverse {
+   background-color: transparent !important;
+   border-color: transparent !important;
 }
 
-/* menu section starts */
+
+/* Add this to your existing CSS styles */
+.navbar ul li a.active-link {
+    color: deepskyblue !important;
+}
+
+
+
+
+/* 
+------ when scrolling down the page the bg turn black (using js) 
+*/ 
+.navbar-scroll {
+    background-color: black !important;
+    
+}
+
+
+
+
+/* menu section ends */
 
 
 /* navigation section starts */
@@ -65,18 +91,17 @@
 
 .slider{
     width: 100%;
-    height: 700px;
+    height: 789px;
     background-image: url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
     color: white;
-
 }
 
 .slider-overlay{
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.3);
     position: relative;
 }
 
@@ -104,6 +129,7 @@
 }
 
 .btn1:hover{
+    cursor: pointer;
     color: white;
     text-decoration: none;
     background: deepskyblue;
@@ -124,6 +150,7 @@
 }
 
 .btn2:hover{
+    cursor: pointer;
     color: white;
     text-decoration: none;
     background: orangered;
@@ -131,6 +158,7 @@
 }
 
 .social-networks a.fa{
+    cursor: pointer;
     text-decoration: none;
     color: white;
     padding: 11px;
@@ -141,11 +169,813 @@
 
 
 .social-networks a.fa:hover{
+    cursor: pointer;
     background: deepskyblue;
     border: none;
     color: white;
     border: 1px solid deepskyblue;
 }
 
+
+
+.slider .text, .slider .typed-cursor{
+display: inline;
+font-size: 50px;
+text-transform: uppercase;
+}
+
+.primary{
+    color: orangered;
+}
+
+.blue{
+    color: rgb(0, 191, 255);
+}
+
+
+.typed-cursor{
+    opacity: 1;
+    animation:  blink .7s infinite;
+    -webkit-animation:  blink .7s infinite;
+    -moz-animation:  blink .7s infinite;
+
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 /* sldier section ends */
+
+
+/* services marckup section starts */
+
+#ourservices{
+    margin-top: 30px;
+}
+
+#ourservices p{
+    margin-bottom: -5px;
+}
+
+.service-wrap{
+    overflow: hidden;
+    border-radius: 9px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: none;
+    position: relative;
+    padding: 25px 35px;
+    z-index: 9;
+    margin-top: 20px;
+    transition: all .5s ease 0s;
+}
+
+.service-wrap::before, .service-wrap::after{
+    content: '';
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 250%;
+    z-index: -9;
+    opacity: 0;
+    transition: all .5s ease-in;
+    background-color: #34495e;
+}
+
+.service-wrap::before{
+    top: -37px;
+    left: 100%;
+}
+
+.service-wrap:hover::before{
+    left: -27px;
+    opacity: 1;
+}
+
+.service-wrap::after{
+    right: 100%;
+    bottom: -37px;
+}
+
+.service-wrap:hover::after{
+    right: -67;
+    opacity: 1;
+}
+
+
+.service-wrap:hover{
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+
+.service-wrap:hover h3{
+    color: white;
+}
+
+.service-wrap:hover h3::after{
+    background-color: white;
+}
+
+.service-icon i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+.service-wrap:hover .service-icon i{
+    transform: rotate(360deg);
+}
+
+.service-wrap h3{
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.service-wrap p{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+
+
+/* for small screen devices  */
+
+
+@media (min-width: 300px) and (max-width: 1180px) {
+    .service-wrap:hover h3{
+        color: black;
+    }
+
+    .service-wrap:hover{
+        cursor: pointer;
+        color: black;
+    }
+
+    .service-wrap::before, .service-wrap::after{
+        content: '';
+        height: 300%;
+        position: absolute;
+        transform: rotate(45deg);
+        width: 250%;
+        z-index: -9;
+        opacity: 0;
+        transition: all .5s ease-in;
+        background-color: deepskyblue;
+    }
+}
+
+/* services marckup section ends */
+
+
+/*  works markup section starts */
+
+.row.no-gutters [class*=col-]{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+
+
+.img-wrapper img{
+    transition: transform .5s ease;
+    width: 100%;
+}
+
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+
+/*  works markup section ends */
+
+
+
+
+
+
+
+
+
+
+
+
+/*  team markup section starts */
+
+.team-member{
+    margin-top: 50px;
+    margin: 0 15px;
+}
+
+
+.team-member-info{
+    padding: 10px 0px 30px 0px;
+}
+
+h4.team-member-name{
+    padding-top: 2px;
+    letter-spacing: 1px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+h4.team-member-desgination{
+    font-size: 15px;
+    font-weight: 700;
+    color: deepskyblue;
+    text-transform: capitalize;
+    margin-top: 5px;
+    letter-spacing: 1px;
+
+}
+
+.social-list{
+    padding-left: 0;
+}
+
+.social-list li{
+    display: inline-block;
+    list-style: none;
+}
+
+.social-list i{
+    font-size: 17px;
+}
+
+.icon-gray{
+    color: #64707b;
+}
+
+
+/*  team markup section ends */
+
+
+
+
+
+
+
+
+
+/* testimonials markup section starts */
+
+.carousel-inner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    position: relative;
+    z-index: 1000;
+}
+
+
+
+.testimonials {
+    position: relative;
+    background-image: url(../img/testimonials.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 155px;
+    overflow: hidden; /* Ensure the box shadow doesn't overflow */
+    z-index: 2;
+
+    /* Add a box shadow using a pseudo-element */
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+ 
+}
+
+
+.testimonials .carousel-indicators{
+    bottom: -60px;
+}
+
+.border-bottom{
+    width: 80px;
+    height: 2px;
+    background-color: white !important;
+    margin: 0 auto;
+}
+
+
+.carousel-inner p{
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*  testimonials markup section ends */
+
+
+
+
+/*  FAQ markup section starts */
+
+#accordian .panel{
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+#accordian .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+}
+
+#accordian .panel-title a{
+  display: block;
+  padding: 25px 35px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: #34495e;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  position: relative;
+  transition: all .3s ease 0s;
+}
+
+
+#accordian .panel-title a::after,
+#accordian .panel-title a.collapsed::after {
+    content: '\f068';
+    font-family: fontawesome;
+    width: 40px;
+    height: 40px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50px;
+    border:  5px solid white;
+    color: white;
+    background-color: #34495e;
+    font-size: 15px;
+    top: 10px;
+    left: -20px;
+    position: absolute;
+    transition: all .3s ease 0s;
+}
+
+#accordian .panel-title a.collapsed::after {
+    content: '\f067';
+}
+
+
+
+#accordian .panel-title a:hover::after,
+#accordian .panel-title a.collpased:hover::after{
+    transform: rotate(360deg);
+}
+
+#accordian .panel-body{
+    padding: 15px 25px;
+    background-color: #ebebeb;
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 25px;
+    position: relative;
+    border-top: none;
+}
+
+
+.panel-heading{
+    font-size: 15px !important;
+    text-decoration: none !important;
+    font-weight: none;
+}
+
+.freeimage img{
+    margin-top: -77.77px;
+    margin-left: 15rem;
+    height: 500px;
+}
+
+
+/*  FAQ markup section ends */
+
+
+
+
+
+
+/* Video markup section starts */
+
+.video-area{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/videobg.jpg);
+    padding-top: 180px;
+    padding-bottom: 180px;
+    overflow: hidden;
+    margin-top: 40px;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+
+
+
+}
+
+
+.play{
+    background: white url(../img/playbtn.jpg) no-repeat 50% 50%;
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    width: 110px;
+    height: 110px;
+    box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+    -webkit-box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+    -moz-box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+    -o-box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+    -ms-box-shadow: 0px 0px 0px 20px rgba(0, 167, 221, 0.5);
+    transition: all .4s ease-in;
+}
+
+
+.play:hover{
+    box-shadow: 0px 0px 15px 20px rgba(0, 84, 111, 0.5);
+}
+
+
+.video-container{
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 54.25%;
+    overflow: hidden;
+    height: 0;
+    margin-top: -130px;
+    display: none;
+}
+
+/* Video markup section ends */
+
+
+
+
+/* Blog markup section starts */
+
+.blog {
+    margin-top: 40px;
+}
+
+.latest-news-wrap {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .1);
+}
+
+.news-img{
+    position: relative;
+}
+
+.news-img::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    content: '';
+    opacity: 0;
+    transform: scale(.8);
+    transition: all .4s;
+}
+
+
+.latest-news-wrap:hover .news-img::before {
+    opacity: .5;
+    transform: scale(1);
+}
+
+.date {
+    background: #f89406 none repeat scroll 0 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+.date span {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.new-content {
+    padding: 20px;
+    margin-left: 3px;
+}
+
+.new-content i {
+    display: inline;
+    font-size: 18px;
+}
+
+.new-content .fa {
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.new-content .fa-facebook {
+    color: #3b5995;
+}
+
+.new-content .fa-twitter {
+    color: #0084b4;
+}
+
+.new-content .fa-linkedin {
+    color: #0077b5;
+}
+
+.new-content .fa-youtube {
+    color: red;
+}
+
+.new-content .fa-whatsapp {
+    color: #34af23;
+}
+
+.new-content button {
+    background: #34495e;
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 10px 20px;
+    transition: .4s ease;
+}
+
+.new-content button:hover {
+    color: #34495e;
+    font-size: 14px;
+    border: .5px solid #34495e;
+    border-top-left-radius: 20px;
+    background-color: transparent;
+    margin-right: 0;
+    text-decoration: none;
+}
+
+/* Blog markup section ends */
+
+
+
+
+
+/* Counter markup section starts */
+
+.stat{
+    background-image: url(../img/stat.jpg);
+    padding-top: 180px;
+    padding-bottom: 200px;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+    padding-top: 100px;
+}
+
+.stat i {
+    font-size: 85px;
+
+}
+
+.stat h2{
+    font-weight: bolder;
+    font-size: 42px;
+    color: deepskyblue;
+}
+
+.stat p{
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Counter markup section ends */
+
+
+
+
+
+
+
+
+
+
+/*  Form markup section starts */
+
+
+/* #contact .btn:hover{
+    background-color: transparent;
+    border: 1px solid #24495e;
+    color: #24495e;
+    transition: all .5s ease-in 0s;
+} */
+
+.contact-area{
+    margin-top: 60px;
+}
+
+.form-control{
+    border-radius: 0px !important;
+    border: 1px solid #34495e !important;
+}
+
+
+.contact-form button.btn{
+    font-size: 1.8em;
+    font-weight: 700;
+    padding: 12px 43px;
+    border-radius: 0px;
+    border: 1px solid black;
+}
+
+.border-bottom{
+    width: 40px;
+    height: 2px;
+    background-color: black;
+}
+
+.contact-info{
+    float: left;
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: -30px;
+    background-color: darkcyan;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.contact-icon i{
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 26px;
+    width: 50px;
+}
+
+
+.contact-info p{
+    color: white;
+    margin-top: 15px;
+
+}
+
+.contact-info a{
+    color: white !important;
+    text-decoration: none !important;
+    list-style: none !important;
+    
+}
+
+/*  Form markup section ends */
+
+
+
+
+/* Google map location markup section starts */
+
+.maps{
+    margin-top: 20px;
+    overflow: hidden; /* Ensure map iframe does not overflow */
+
+}
+
+
+.maps iframe {
+    width: 100%; /* Full width on all screen sizes */
+    height: 400px; /* Adjusted height for better visibility */
+    border: none; /* Remove iframe border */
+}
+/* Google map location markup section ends */
+
+
+
+/* Footer markup section starts */
+
+.footer{
+    background: url(../img/Black-Wood-Footer-Background.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-attachment: fixed;
+    padding-top: 145px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+
+.social-icon a{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px 16px 20px 16px;
+}
+
+
+.footer .fa{
+    font-size: 30px;
+    color: deepskyblue;
+    width: 80px;
+    height: 80px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    line-height: 2;
+    border:  10px solid #24495e;
+    text-align: center;
+    transition: all .7s ease-in;
+}
+
+
+.social-icon a:hover .fa{
+    border: 10px solid white;
+    transform: rotate(360deg);
+}
+
+.borderdown{
+    width: 50px;
+    border-bottom: 2px solid white;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-left: 56.9rem;
+}
+
+.copyright{
+    padding-top: 5rem;
+    text-align: center;
+
+}
+
+/* Footer markup section ends */
 

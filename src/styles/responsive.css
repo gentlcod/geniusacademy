@@ -1,0 +1,397 @@
+/* Responsive CSS for Phones and Tablets */
+
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+.container {
+    padding-right: 5vw; /* Adjusted padding using viewport units */
+    padding-left: 5vw;  /* Adjusted padding using viewport units */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-right: 10px; /* Example of specific padding adjustment for smaller screens */
+        padding-left: 10px;  /* Example of specific padding adjustment for smaller screens */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 0; /* Reduce padding for smaller screens */
+    }
+
+    .navbar ul {
+        margin-top: 0; /* Remove margin from ul */
+        padding-left: 0; /* Remove left padding from ul */
+        text-align: center; /* Center-align navigation links */
+    }
+
+    .navbar ul li {
+        display: block; /* Display list items in a block */
+        margin-bottom: 10px; /* Add spacing between list items */
+    }
+
+    .navbar ul li:last-child {
+        margin-bottom: 0; /* Remove margin from last list item */
+    }
+
+    .navbar ul li a {
+        padding: 10px 15px; /* Adjust padding for better touch target */
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    .navbar-toggle {
+        margin-top: 8px; /* Adjust margin for toggle button */
+    }
+
+    .navbar-collapse {
+        padding-left: 0; /* Remove left padding from collapsed menu */
+    }
+
+    .navbar-brand img {
+        height: auto; /* Ensure logo height adjusts according to device */
+        width: 80px; /* Adjust logo width for smaller screens */
+    }
+}
+
+/* Additional Tablet-specific Styles (for screens up to 1024px, adjust as needed) */
+@media (max-width: 1024px) {
+    .navbar ul li a {
+        font-size: 14px; /* Further reduce font size for tablets if needed */
+    }
+}
+
+
+
+
+/* Responsive CSS for Phones and Tablets */
+@media (max-width: 768px) {
+    .slider {
+        height: 500px; /* Adjust height for smaller screens */
+    }
+
+    .slider-content {
+        top: 50%; /* Adjust position of content vertically */
+        transform: translateY(-50%); /* Center content vertically */
+    }
+
+    .icons .fa {
+        font-size: 25px; /* Reduce icon size for smaller screens */
+    }
+
+    .btn1,
+    .btn2 {
+        padding: 10px 15px; /* Adjust button padding for better fit */
+        font-size: 12px; /* Reduce button font size */
+    }
+
+    .social-networks a.fa {
+        padding: 8px; /* Adjust social icon padding */
+    }
+
+    .slider .text {
+        font-size: 30px; /* Reduce text size for smaller screens */
+    }
+}
+
+/* Additional Tablet-specific Styles (for screens up to 1024px, adjust as needed) */
+@media (max-width: 1024px) {
+    .slider {
+        height: 600px; /* Further adjust height for tablets if needed */
+    }
+
+    .slider .text {
+        font-size: 40px; /* Adjust text size for tablets */
+    }
+}
+
+
+
+
+/* Responsive CSS for Phones and Tablets */
+@media (max-width: 768px) {
+    .service-wrap {
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin-top: 15px; /* Reduce top margin for better spacing */
+    }
+
+    .service-wrap::before, .service-wrap::after {
+        height: 200%; /* Adjust pseudo-element height for smaller screens */
+    }
+
+    .service-icon i {
+        font-size: 25px; /* Reduce icon size for smaller screens */
+    }
+
+    .service-wrap h3 {
+        font-size: 20px; /* Reduce heading font size for smaller screens */
+    }
+
+    .service-wrap p {
+        font-size: 13px; /* Reduce paragraph font size for smaller screens */
+    }
+}
+
+/* Additional Tablet-specific Styles (for screens up to 1024px, adjust as needed) */
+@media (max-width: 1024px) {
+    .service-wrap {
+        padding: 25px; /* Further adjust padding for tablets if needed */
+    }
+
+    .service-wrap h3 {
+        font-size: 22px; /* Adjust heading font size for tablets */
+    }
+
+    .service-wrap p {
+        font-size: 14px; /* Adjust paragraph font size for tablets */
+    }
+}
+
+
+
+
+
+/* Responsive CSS for Phones and Tablets */
+@media (max-width: 768px) {
+    .img-wrapper {
+        margin-bottom: 15px; /* Adjust margin between images for smaller screens */
+    }
+
+    .img-wrapper img {
+        width: 100%; /* Ensure images take full width of their container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Additional Tablet-specific Styles (adjust as needed) */
+@media (max-width: 1024px) {
+    .img-wrapper {
+        margin-bottom: 20px; /* Further adjust margin between images for tablets if needed */
+    }
+}
+
+
+
+
+/* Responsive CSS for Phones and Tablets */
+@media (max-width: 768px) {
+    .team-member {
+        margin-top: 30px; /* Adjust top margin for team members on smaller screens */
+        margin-bottom: 30px; /* Add bottom margin for better separation */
+    }
+
+    .team-member img {
+        height: auto; /* Ensure images scale proportionally */
+        max-width: 100%; /* Prevent images from overflowing their containers */
+    }
+
+    .team-member-info {
+        padding: 10px 20px 30px 20px; /* Adjust padding for better spacing */
+    }
+
+    h4.team-member-name {
+        font-size: 18px; /* Decrease font size for team member names */
+    }
+
+    h4.team-member-desgination {
+        font-size: 14px; /* Decrease font size for team member designations */
+    }
+
+    .social-list i {
+        font-size: 16px; /* Decrease font size for social icons */
+    }
+}
+
+
+
+
+
+
+/* Responsive CSS for Phones and Tablets */
+@media (max-width: 768px) {
+    .testimonials {
+        padding-top: 30px; /* Reduce top padding for smaller screens */
+        padding-bottom: 100px; /* Reduce bottom padding for smaller screens */
+    }
+
+    .carousel-inner img {
+        width: 100px; /* Decrease image size for smaller screens */
+        height: 100px; /* Decrease image size for smaller screens */
+    }
+
+    .carousel-indicators {
+        bottom: -40px; /* Adjust position of carousel indicators for smaller screens */
+    }
+
+    .carousel-inner h2 {
+        font-size: 24px; /* Decrease heading font size for smaller screens */
+    }
+
+    .carousel-inner h4 {
+        font-size: 14px; /* Decrease sub-heading font size for smaller screens */
+    }
+
+    .carousel-inner p {
+        font-size: 14px; /* Decrease paragraph font size for smaller screens */
+        margin-top: 20px; /* Adjust top margin for paragraphs */
+    }
+
+    .border-bottom {
+        margin-top: 15px; /* Adjust top margin for the border-bottom */
+    }
+}
+
+
+
+/* Responsive adjustments for FAQ section */
+@media (max-width: 768px) {
+    .freeimage img {
+        margin-left: 0;
+        margin-top: 20px;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+
+/* Responsive adjustments for Video section */
+@media (max-width: 768px) {
+    .video-area {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .video-container {
+        display: block; /* Show the video container */
+        margin-top: -80px; /* Adjust margin for smaller screens */
+        padding-bottom: 56.25%; /* 16:9 aspect ratio for video */
+    }
+
+    .play {
+        margin-top: 40px; /* Adjust play button position */
+        margin-bottom: 20px;
+        width: 80px;
+        height: 80px;
+        box-shadow: 0px 0px 0px 10px rgba(0, 167, 221, 0.5);
+        -webkit-box-shadow: 0px 0px 0px 10px rgba(0, 167, 221, 0.5);
+        -moz-box-shadow: 0px 0px 0px 10px rgba(0, 167, 221, 0.5);
+        -o-box-shadow: 0px 0px 0px 10px rgba(0, 167, 221, 0.5);
+        -ms-box-shadow: 0px 0px 0px 10px rgba(0, 167, 221, 0.5);
+    }
+}
+
+
+
+/* Responsive adjustments for Blog section */
+@media (max-width: 768px) {
+    .blog {
+        margin-top: 20px; /* Adjusted margin */
+    }
+
+    .latest-news-wrap {
+        margin-bottom: 30px; /* Increased margin between blog items */
+    }
+
+    .news-img img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    .new-content {
+        padding: 15px; /* Reduced padding */
+    }
+
+    .date {
+        width: 50px; /* Adjusted date circle width */
+        height: 50px;
+        font-size: 14px; /* Reduced font size */
+        padding: 7px; /* Reduced padding */
+    }
+
+    .new-content button {
+        padding: 8px 15px; /* Adjusted button padding */
+        font-size: 12px; /* Reduced font size */
+    }
+}
+
+
+/* Responsive adjustments for Counter section */
+@media (max-width: 768px) {
+    .stat {
+        padding-top: 120px; /* Adjusted top padding */
+        padding-bottom: 120px; /* Adjusted bottom padding */
+    }
+
+    .stat-items {
+        margin-bottom: 30px; /* Increased margin between stat items */
+    }
+
+    .stat i {
+        font-size: 65px; /* Reduced icon size */
+    }
+
+    .stat h2 {
+        font-size: 32px; /* Reduced counter font size */
+    }
+}
+
+
+
+
+/* Responsive adjustments for Form section */
+
+@media (max-width: 768px) {
+    .contact-area {
+        margin-top: 40px; /* Adjusted top margin */
+    }
+
+    .form-control {
+        border-radius: 4px !important; /* Slightly rounded corners */
+        border: 1px solid #34495e !important;
+        padding: 12px; /* Increased padding for better touch input */
+        font-size: 14px; /* Reduced font size for smaller screens */
+    }
+
+    .contact-form button.btn {
+        font-size: 16px; /* Reduced button font size */
+        padding: 10px 35px; /* Adjusted padding */
+    }
+
+    .contact-info {
+        margin-top: 60px; /* Adjusted top margin */
+        padding-top: 20px; /* Adjusted top padding */
+        padding-bottom: 20px; /* Adjusted bottom padding */
+    }
+
+    .contact-icon i {
+        line-height: 40px; /* Adjusted line height for icon */
+        font-size: 22px; /* Reduced icon size */
+        width: 40px; /* Reduced icon width */
+    }
+
+    .contact-info p {
+        margin-top: 10px; /* Reduced top margin for paragraph */
+        font-size: 14px; /* Reduced font size */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .maps iframe {
+        height: 300px; /* Reduced height for smaller screens */
+    }
+}
+
+
+
+
+
+

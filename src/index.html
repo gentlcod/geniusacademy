@@ -5,23 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+
     <!-- title and icon link -->
     <link rel="icon" href="./img/icon.jpg" type="x-icon" >
-    <title>Genius Academy</title>
+    <title>Genius Business Academy</title>
+
+
+
+      <!-- style file css link -->
+      <link rel="stylesheet" href="./styles/style.css">
+      <link rel="stylesheet" href="./styles/responsive.css">
+  
+
+
+    <!-- magnific popup css files -->
+    <link rel="stylesheet" href="./styles/magnific-popup.css">
+
+
+
+
+    <!-- owl carousel css files -->
+    <link rel="stylesheet" href="./styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="./styles/owl.theme.default.min.css">
+
+
+
 
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- style file css link -->
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
-
+  
 
 <!-- Bootstrap Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+
+
+
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+
+<!-- magnific popup css files -->
+<script src="./js/jquery.magnific-popup.min.js"></script>
+
+
+
 
 <!-- Bootstrap Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -31,10 +62,10 @@
 <body>
 
     <!-- navigation section starts -->
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
+    
 
                 <!-- responsive button -->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
@@ -42,34 +73,29 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-
-
-
-                <a href="./index.html" class="navbar-brand"><img src="./img/logo.jpg" height="75px" width="110px" style="margin-top: -2.75rem;" class="logo" alt="logo image"></a>
+    
+                <a href="./index.html" class="navbar-brand">
+                    <img src="./img/logo.jpg" height="75px" width="110px" style="margin-top: -2.75rem;" class="logo" alt="logo image">
+                </a>
             </div>
-
-             <!--  
-                -- nav menu starts
-            -->
-            <div class="collpase navbar-collapse" id="navigation">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home">Home</li></a>
-                <li><a href="#ourservices">Our services</li></a>
-                <li><a href="#works">Works</li></a>
-                <li><a href="#team">Team</li></a>
-                <li><a href="#aboutus">About US</li></a>
-                <li><a href="#blog">Blog</li></a>
-                <li><a href="#carrier">Carrier</li></a>
-                <li class="location"><a href="#ourlocation">Our Location</li></a>
-            </ul>
-            <!--  
-                -- nav menu ends
-            -->
-
+    
+            <!-- nav menu starts -->
+            <div class="collapse navbar-collapse collapsed" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active-link smooth-scroll" href="#home">Home</a></li>
+                    <li><a class="smooth-scroll" href="#ourservices">Our services</a></li>
+                    <li><a class="smooth-scroll" href="#works">Works</a></li>
+                    <li><a class="smooth-scroll" href="#team">Team</a></li>
+                    <li><a class="smooth-scroll" href="#aboutus">About</a></li>
+                    <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                    <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                    <li class="location"><a href="#ourlocation">Our Location</a></li>
+                </ul>
+                <!-- nav menu ends -->
+            </div>
         </div>
-    </div>
-
     </nav>
+    
 
     <!-- navigation section ends -->
 
@@ -81,7 +107,7 @@
 
     <!-- slider section starts -->
 
-    <section class="slider text-center" id="slider">
+    <section class="slider text-center" id="home">
         <div class="slider-overlay">
             <div class="slider-content">
                 <div class="icons">
@@ -94,20 +120,20 @@
                 <br>
                 <div class="text"></div>
                 <div class="cta-div">
-                    <a href="" class="btn1">CONTACT US !</a>
-                    <a href="" class="btn2">LEARN TODAY !</a>
+                    <a class="btn1">CONTACT US !</a>
+                    <a class="btn2">LEARN TODAY !</a>
 
                 </div>
 
                 <br><br>
 
                 <div class="social-networks">
-                    <a href="" class="fa fa-facebook"></a>
-                    <a href="" class="fa fa-twitter"></a>
-                    <a href="" class="fa fa-windows"></a>
-                    <a href="" class="fa fa-reddit"></a>
-                    <a href="" class="fa fa-linkedin"></a>
-                    <a href="" class="fa fa-cog"></a>
+                    <a class="fa fa-facebook"></a>
+                    <a class="fa fa-twitter"></a>
+                    <a class="fa fa-windows"></a>
+                    <a class="fa fa-reddit"></a>
+                    <a class="fa fa-linkedin"></a>
+                    <a class="fa fa-cog"></a>
 
                 </div>
             </div>
@@ -116,6 +142,1104 @@
 
     <!-- slider section ends -->
 
+
+    <br><br><br>
+
+    <!-- services marckup section starts -->
+
+    <section id="ourservices" class="ourservices">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-title text-center">
+                        <h2><b>SERVICES</b></h2>
+                        <p>
+                            You can ask the question regarding the issues we will solve that together for sure.
+                        </p>
+                       
+
+                    </div>
+                </div>
+            </div> <br><br>
+
+            <div class="row">
+
+                <!--  
+                    -- first service column
+                -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-leaf"></i>
+                        </div>
+                        <h3>Developement</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis. Labore assumenda distinctio enim laudantium laborum porro, ad rem, asperiores laboriosam veniam suscipit fugit cum accusantium a magnam pariatur voluptates!
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                 <!--  
+                    -- second service column
+                -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <h3>Support</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis. Labore assumenda distinctio enim laudantium laborum porro, ad rem, asperiores laboriosam veniam suscipit fugit cum accusantium a magnam pariatur voluptates!
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                 <!--  
+                    -- third service column
+                -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <h3>Marketing</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis. Labore assumenda distinctio enim laudantium laborum porro, ad rem, asperiores laboriosam veniam suscipit fugit cum accusantium a magnam pariatur voluptates!
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+                 <!--  
+                    -- fourth service column
+                -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <h3>Insurence</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis. Labore assumenda distinctio enim laudantium laborum porro, ad rem, asperiores laboriosam veniam suscipit fugit cum accusantium a magnam pariatur voluptates!
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                 <!--  
+                    -- fifth service column
+                -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-diamond"></i>
+                        </div>
+                        <h3>Design</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis. Labore assumenda distinctio enim laudantium laborum porro, ad rem, asperiores laboriosam veniam suscipit fugit cum accusantium a magnam pariatur voluptates!
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                 <!--  
+                    -- sixth service column
+                -->
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="service-wrap text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-cog"></i>
+                        </div>
+                        <h3>Web Design</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, perferendis. Labore assumenda distinctio enim laudantium laborum porro, ad rem, asperiores laboriosam veniam suscipit fugit cum accusantium a magnam pariatur voluptates!
+                        </p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- services marckup section ends -->
+
+
+
+
+
+
+
+    <br><br><br>
+
+
+   <!-- works markup section starts -->
+
+
+   <section id="works" class="works">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+
+
+             <!--
+                -- first work image 
+            -->
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="img-wrapper">
+                    <a href="./img/work1.jpg" title="Image description will be here">
+                        <img src="./img/work1.jpg" >
+                    </a>
+                </div>
+            </div>
+
+
+             <!--
+                -- sedcond work image 
+            -->
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="img-wrapper">
+                    <a href="./img/work2.jpg" title="Image description will be here">
+                        <img src="./img/work2.jpg" >
+                    </a>
+                </div>
+            </div>
+
+
+             <!--
+                -- third work image 
+            -->
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="img-wrapper">
+                    <a href="./img/work3.jpg" title="Image description will be here">
+                        <img src="./img/work3.jpg" >
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!--
+                -- fourth work image 
+            -->
+            <div class="col-md-3 col-sm-3 col-xs-3">
+                <div class="img-wrapper">
+                    <a href="./img/work4.jpg" title="Image description will be here">
+                        <img src="./img/work4.jpg" >
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row no-gutters">
+
+
+            <!--
+               -- fifth work image 
+           -->
+           <div class="col-md-3 col-sm-3 col-xs-3">
+               <div class="img-wrapper">
+                   <a href="./img/work5.jpg" title="Image description will be here">
+                       <img src="./img/work5.jpg" >
+                   </a>
+               </div>
+           </div>
+
+
+            <!--
+               -- sixth work image 
+           -->
+           <div class="col-md-3 col-sm-3 col-xs-3">
+               <div class="img-wrapper">
+                   <a href="./img/work6.jpg" title="Image description will be here">
+                       <img src="./img/work6.jpg" >
+                   </a>
+               </div>
+           </div>
+
+
+            <!--
+               -- seventh work image 
+           -->
+           <div class="col-md-3 col-sm-3 col-xs-3">
+               <div class="img-wrapper">
+                   <a href="./img/work7.jpg" title="Image description will be here">
+                       <img src="./img/work7.jpg" >
+                   </a>
+               </div>
+           </div>
+
+
+
+           <!--
+               -- eighth work image 
+           -->
+           <div class="col-md-3 col-sm-3 col-xs-3">
+               <div class="img-wrapper">
+                   <a href="./img/work8.jpg" title="Image description will be here">
+                       <img src="./img/work8.jpg" >
+                   </a>
+               </div>
+           </div>
+
+       </div>
+
+
+    </div>
+   </section>
+<!-- works markup section ends -->
+
+
+<br><br><br>
+
+
+
+<!-- team markup section starts -->
+
+
+<section class="team" id="team">
+    <div class="container text-center">
+        <h2><b>TEAM MEMBERS</b></h2>
+        <p>You can ask the question regarding the issues we will solve that together for sure</p>
+    </div><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="team-members" class="owl-carousel owl-theme">
+
+                    <!-- 
+                        --- first member 
+                    -->
+                <div class="team-member text-center">
+                    <img src="./img/Joseph.jpg" height="350px" width="350px">
+                    <div class="team-member-info">
+                        <h4 class="team-member-name">
+                            Joseph Asante
+                        </h4>
+                        <h4 class="team-member-desgination">CEO</h4>
+                        <ul class="social-list">
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-linkedin"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                 <!-- 
+                        --- second member 
+                    -->
+                <div class="team-member text-center">
+                    <img src="./img/adam.jpg" height="350px" width="350px">
+                    <div class="team-member-info">
+                        <h4 class="team-member-name">
+                           Adam Burgol
+                        </h4>
+                        <h4 class="team-member-desgination">CO-Founder</h4>
+                        <ul class="social-list">
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-linkedin"></i></a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+                 <!-- 
+                        --- third member 
+                    -->
+                <div class="team-member text-center">
+                    <img src="./img/sarah.jpg" height="350px" width="350px">
+                    <div class="team-member-info">
+                        <h4 class="team-member-name">
+                            Sarah Jhonson
+                        </h4>
+                        <h4 class="team-member-desgination">Sr Designer</h4>
+                        <ul class="social-list">
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-linkedin"></i></a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+                 <!-- 
+                        --- fourth member 
+                    -->
+                <div class="team-member text-center">
+                    <img src="./img/angela.jpg" height="350px" width="350px">
+                    <div class="team-member-info">
+                        <h4 class="team-member-name">
+                            Angela Yu
+                        </h4>
+                        <h4 class="team-member-desgination">Marketing Executive</h4>
+                        <ul class="social-list">
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-linkedin"></i></a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+                 <!-- 
+                        --- fifth member 
+                    -->
+                <div class="team-member text-center">
+                    <img src="./img/moe.jpg" height="350px" width="350px">
+                    <div class="team-member-info">
+                        <h4 class="team-member-name">
+                            Moe Asto
+                        </h4>
+                        <h4 class="team-member-desgination">Sr Developer</h4>
+                        <ul class="social-list">
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="" class="social-icon icon-gray"><i class="fa fa-linkedin"></i></a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- team markup section ends -->
+
+
+
+
+
+
+<!-- testimonials markup section starts -->
+
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <br><br>
+                <h2><b>REVIEWS</b></h2>
+                <div class="sub-heading">
+                    <div class="border-bottom"></div>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="carousel slide" id="carousel-testimonials" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-testimonials" data-slide-to="1"></li>
+                        <li data-target="#carousel-testimonials" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <!-- 1st client img -->
+                        <div class="item active text-center">
+                            <img src="./img/client1.jpg" height="50px" width="50px" class="center-block">
+                            <h2>Cacious</h2>
+                            <h4>Sr. UI/UX Designer</h4>
+                            <p>
+                                The most relevant information. 100% Privacy protected!
+                                <br> Find what you are looking for here.
+                                99% match on business startup course
+                            </p>
+                        </div>
+
+                        <!-- 2nd client img -->
+                        <div class="item text-center">
+                            <img src="./img/client2.jpg" height="50px" width="50px" class="center-block">
+                            <h2>Alexander</h2>
+                            <h4>AI Engineer</h4>
+                            <p>
+                                The most relevant information. 100% Privacy protected!
+                                <br> Find what you are looking for here.
+                                99% match on business startup course
+                            </p>
+                        </div>
+
+                        <!-- 3rd client img -->
+                        <div class="item text-center">
+                            <img src="./img/client3.jpg" height="50px" width="50px" class="center-block">
+                            <h2>Julia</h2>
+                            <h4>Software Developer</h4>
+                            <p>
+                                The most relevant information. 100% Privacy protected!
+                                <br> Find what you are looking for here.
+                                99% match on business startup course
+                            </p>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- testimonials markup section ends -->
+
+
+
+<br><br><br>
+
+
+<!-- FAQ markup section starts -->
+
+<section class="faq" id="aboutus">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2><b>GENERAL FAQs</b></h2>
+                <div class="sub-heading">
+                    <p>
+                        You can ask the question regarding the issues 
+                        <br> we will solve that together for sure.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> <br><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+
+            <!-- First panel -->
+<div class="panel-group" id="accordian">
+    <div class="panel panel-default">
+        <div class="panel-heading" id="headingOne">
+            <h4 class="panel-title">
+                <a href="#collapseOne" class="collapsed" data-toggle="collapse" data-parent="#accordian">What is Genius Academy all about?</a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" aria-labelledby="headingone">
+            <div class="panel-body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum cum ducimus cumque laboriosam ipsa, illum explicabo blanditiis nobis voluptates sint, tempore atque, sequi maiores. Quos temporibus mollitia ullam incidunt harum.e
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Second panel -->
+<div class="panel-group" id="accordian">
+    <div class="panel panel-default">
+        <div class="panel-heading" id="headingTwo">
+            <h4 class="panel-title">
+                <a href="#collapseTwo" class="collapsed" data-toggle="collapse" data-parent="#accordian">Do you have lessons on C++, Python, or Java?</a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" aria-labelledby="headingtwo">
+            <div class="panel-body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum cum ducimus cumque laboriosam ipsa, illum explicabo blanditiis nobis voluptates sint, tempore atque, sequi maiores. Quos temporibus mollitia ullam incidunt harum.e
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+                
+             <!-- Third panel -->
+<div class="panel-group" id="accordian">
+    <div class="panel panel-default">
+        <div class="panel-heading" id="headingThird">
+            <h4 class="panel-title">
+                <a href="#collapseThree" class="collapsed collpase" data-toggle="collapse" data-parent="#accordian">How do I participate in the Masterclass?</a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" aria-labelledby="headingthree">
+            <div class="panel-body">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum cum ducimus cumque laboriosam ipsa, illum explicabo blanditiis nobis voluptates sint, tempore atque, sequi maiores. Quos temporibus mollitia ullam incidunt harum.e
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+                <!-- Fourth panel -->
+                            <div class="panel-group" id="accordian">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" id="headingFour">
+                                        <h4 class="panel-title">
+                                            <a href="#collpaseFour" class="collapsed collpase" data-toggle="collapse" data-parent="#accordian">How do I become an affilate?</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collpaseFour" class="panel-collapse collapse" aria-labelledby="headingfour">
+                                        <div class="panel-body">
+                                            <p>
+                                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum cum ducimus cumque laboriosam ipsa, illum explicabo blanditiis nobis voluptates sint, tempore atque, sequi maiores. Quos temporibus mollitia ullam incidunt harum.e
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                </div>
+            </div>
+
+            <div class="freeimage">
+                <div class="col-md-2 col-md-offset-1">
+                    <img src="./img/phone.jpg" alt="phone image">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ markup section ends -->
+
+
+<!-- Video markup section starts -->
+
+<section class="video-area wow bounceInUp" id="video">
+  <div id="color_overlay" class="color-overlay">
+    <div class="video-container">
+        <div class="player"></div>
+        <div class="video-mask"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="video-mask">
+                    <a href="https://www.youtube.com/watch?v=t-cPUWfjl8E" target="_blank" class="play"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+<!-- Video markup section ends -->
+
+
+
+<!-- Blog markup section starts -->
+
+<section class="blog" id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-title text-center wow zoomIn" data-wow-duration=".2s" data-wow-delay=".2s">
+                    <h2><b>RECENT BLOGS</b></h2>
+                    <div class="sub-heading">
+                        
+                            You can ask the question regarding the issues 
+                            <br> we will solve that together for sure.
+                            <br>
+                            <br>
+                            <br>
+                          
+                        
+                    </div>
+                </div>
+            </div>
+        
+            <br><br>
+
+            <div class="row">
+                <div class="news-active">
+
+
+
+
+
+                     <!-- 
+                        ----- First blog 
+                    -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration=".4s" data-wow-delay=".4s">
+                        <div class="latest-news-wrap">
+                            <div class="news-img">
+                                <img src="./img/blog1.jpg" class="img-responsive">
+                                <div class="date">
+                                    <span>31</span>
+                                    <span>DEC</span>
+                                </div>
+                            </div>
+
+                            <div class="new-content">
+                                <div class="socilamediaicons">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                                <i class="fa fa-whatsapp"></i>
+                            </div>
+
+                                <p>
+                                    Sometimes people go through life without really knowing the impact that they make on these around them.
+                                    They could be kind-hearted, giving and caring, and completly tune with others mood, but they don't always see what is is that make
+                                    a difference to someone else.
+                                    God's wisdom revolutionizes our lives by showing us how we've impacted other people in ways we never would've imagined,
+                                    sometimes for better, sometimes for worse,
+                                    it also opens our eyes to the wisdom we passes within ourselves.
+                                </p> <br>
+                                <button>READ MORE</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!-- 
+                        ----- Second blog 
+                    -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="latest-news-wrap">
+                            <div class="news-img">
+                                <img src="./img/blog2.jpg" class="img-responsive">
+                                <div class="date">
+                                    <span>31</span>
+                                    <span>DEC</span>
+                                </div>
+                            </div>
+
+                            <div class="new-content">
+                                 <div class="socilamediaicons">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-youtube"></i>
+                                <i class="fa fa-whatsapp"></i>
+                            </div>
+
+                                <p>
+                                    Sometimes people go through life without really knowing the impact that they make on these around them.
+                                    They could be kind-hearted, giving and caring, and completly tune with others mood, but they don't always see what is is that make
+                                    a difference to someone else.
+                                    God's wisdom revolutionizes our lives by showing us how we've impacted other people in ways we never would've imagined,
+                                    sometimes for better, sometimes for worse,
+                                    it also opens our eyes to the wisdom we passes within ourselves.
+                                </p> <br>
+                                <button>READ MORE</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!-- 
+                        --- Third blog
+                     -->
+                     <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="latest-news-wrap">
+                            <div class="news-img">
+                                <img src="./img/blog3.jpg" class="img-responsive">
+                                <div class="date">
+                                    <span>31</span>
+                                    <span>DEC</span>
+                                </div>
+                            </div>
+
+                            <div class="new-content">
+                                <div class="socilamediaicons">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-linkedin"></i>
+                                    <i class="fa fa-youtube"></i>
+                                    <i class="fa fa-whatsapp"></i>
+                                </div>
+
+                                <p>
+                                    Sometimes people go through life without really knowing the impact that they make on these around them.
+                                    They could be kind-hearted, giving and caring, and completly tune with others mood, but they don't always see what is is that make
+                                    a difference to someone else.
+                                    God's wisdom revolutionizes our lives by showing us how we've impacted other people in ways we never would've imagined,
+                                    sometimes for better, sometimes for worse,
+                                    it also opens our eyes to the wisdom we passes within ourselves.
+                                </p> <br>
+                                <button>READ MORE</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-- Blog markup section ends -->
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+<!-- Counter markup section starts -->
+
+<section class="stat" id="carrier">
+    <div class="content-box">
+        <br><br>
+        <div class="container">
+            <div class="row text-center">
+
+                <!-- 
+                    --      TV users
+                -->
+                <div class="col-md-3 wow fadeInLeft" data-wow-duration=".3s" data-wow-delay=".3s">
+                    <div class="stat-items">
+                        <i class="fa fa-tv"></i>
+                        <h2><span class="counter text-center">3200</span> <span>+</span></h2>
+                        <p>VIEWS</p>
+                    </div>
+                </div>
+
+
+
+                 <!-- 
+                    -- Android users
+                -->
+                <div class="col-md-3 wow fadeInLeft" data-wow-duration=".6s" data-wow-delay=".6s">
+                    <div class="stat-items">
+                        <i class="fa fa-android"></i>
+                        <h2><span class="counter text-center">3987</span> <span>+</span></h2>
+                        <p>ANDROID USER</p>
+                    </div>
+                </div>
+
+
+                 <!-- 
+                    -- Apple users
+                -->
+                <div class="col-md-3 wow fadeInLeft" data-wow-duration=".9s" data-wow-delay=".9s">
+                    <div class="stat-items">
+                        <i class="fa fa-apple"></i>
+                        <h2><span class="counter text-center">7289</span> <span>+</span></h2>
+                        <p>INTERNATIONALLY</p>
+                    </div>
+                </div>
+
+
+
+                 <!-- 
+                    -- Windows users
+                -->
+                <div class="col-md-3 wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="1.2s">
+                    <div class="stat-items">
+                        <i class="fa fa-windows"></i>
+                        <h2><span class="counter text-center">3934</span> <span>+</span></h2>
+                        <p>WINDOW SUPPORTS</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Counter markup section ends -->
+
+
+
+
+<!-- Form markup section starts -->
+
+<section id="contact" class="contanct-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <div class="section-heading wow fadeInUp" data-wow-duration=".2s" data-wow-delay=".2s">
+                    <h2 class="secion-title"><b>LEAVE A MESSAGE</b></h2>
+                    <div class="border-bottom"></div>
+                </div>
+            </div>
+        </div> <br><br><br>
+
+
+        <div class="row wow fadeInUp">
+            <div class="col-md-8 col-md-offset-2">
+                <form id="contactform" class="contact-form">
+                    <div class="row">
+
+                        <!--  
+                            -- Name
+                        -->
+                        <div class="col-md-6">
+                            <input id="name" type="text" class="form-control" name="name" placeholder="NAME" required>
+                        </div>
+
+                        <!--  
+                            -- Email
+                        -->
+                        <div class="col-md-6">
+                            <input id="email" type="email" class="form-control" name="email" placeholder="EMAIL" required>
+                        </div>
+
+                        <!--  
+                            -- Subject
+                        -->
+                        <div class="col-md-12"> <br>
+                            <input type="text" id="subject" placeholder="SUBJECT" class="form-control" name="name" required>
+                        </div>
+                   
+                        <!--  
+                            -- Text area message
+                        -->
+                        <div class="col-md-12"><br>
+                            <textarea name="" id="message" class="form-control" placeholder="MESSAGE" required></textarea>
+                        </div>
+
+                        <!--  
+                            -- Submit Message
+                        -->
+                        <div class="col-md-12 text-center"> <br><br>
+                            <button class="btn" type="button">Submit Message</button>
+                        </div>
+                    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="contact-info">
+            <div class="col-md-4 text-center wow fadeInLeft" data-wow-duration=".3s" data-wow-delay=".3s">
+                <div class="contact-item">
+                    <span class="contact-icon">
+                        <i class="fa fa-map-marker"></i>
+                    </span>
+
+                    <a href="https://www.google.com/maps?ll=41.893184,12.55745&z=4&t=m&hl=tr&gl=TR&mapclient=embed&cid=12640456972185367142">
+                         <p class="contact-detail">
+                        00233 Pos Streets, Accra Ghana <br>
+                        Accra Post Office
+                    </p> </a>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center wow fadeInLeft" data-wow-duration=".6s" data-wow-delay=".6s">
+                <div class="contact-item">
+                    <span class="contact-icon">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <a href="mailto:geniusacademy.info@gmail.com">
+                        <p class="contact-detail">
+                            geniusacademy.info@gmail.com
+                        </p>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center wow fadeInLeft" data-wow-duration=".9s" data-wow-delay=".9s">
+                <div class="contact-item">
+                    <span class="contact-icon">
+                        <i class="fa fa-phone"></i>
+                    </span>
+                    <p class="contact-detail">
+                        <a href="tel:+233245496252">+233-2454-96252 - Office</a> <br>
+                        <a href="tel:+233241130805">+233-2411-30805 - Fax</a>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Form markup section ends -->
+
+
+
+
+
+
+
+<!-- Google map location markup section stars -->
+
+
+<section class="maps wow fadeInUp" id="ourlocation">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12164883.359757576!2d-6.954345703125!3d41.89409955811396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6192e2384bdd%3A0xaf6beca4e9b7f266!2sGenius%20Academy!5e0!3m2!1str!2str!4v1703541782596!5m2!1str!2str"
+     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</section>
+
+
+<!-- Google map location markup section ends -->
+
+
+
+
+
+<!-- Footer markup section starts -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-ms-12 text-center">
+                <div class="social-icon">
+
+                    <a><i class="fa fa-facebook wow fadeInLeft" data-wow-duration=".3s" data-wow-delay=".3s"></i></a>
+                    <a><i class="fa fa-twitter wow fadeInLeft" data-wow-duration=".6s" data-wow-delay=".6s"></i></a>
+                    <a><i class="fa fa-google-plus wow fadeInLeft" data-wow-duration=".9s" data-wow-delay=".9s"></i></a>
+                    <a><i class="fa fa-pinterest wow fadeInLeft" data-wow-duration="1.2s" data-wow-delay="1.2s"></i></a>
+                    <a><i class="fa fa-rss wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="1.5s"></i></a>
+                    <a><i class="fa fa-linkedin wow fadeInLeft" data-wow-duration="1.8s" data-wow-delay="1.8s"></i></a>
+                    <a><i class="fa fa-vimeo-square wow fadeInLeft" data-wow-duration="2.1s" data-wow-delay="2.1s"></i></a>
+                    <a><i class="fa fa-youtube wow fadeInLeft" data-wow-duration="2.3s" data-wow-delay="2.3s"></i></a>
+                    <a><i class="fa fa-dribbble wow fadeInLeft" data-wow-duration="2.6s" data-wow-delay="2.6s"></i></a>
+                </div> <br>
+
+                <div class="copyright">
+                    <p class="footer-logo">
+                        &copy; <img src="./img/logo.jpg" height="75px" width="110px">
+                    </p>
+
+                    <div class="borderdown"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="copyright">&copy;2023 All Right Reserved Genius Business Academy</p>
+</footer>
+
+<!-- Footer markup section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
     
     
 
@@ -123,6 +1247,22 @@
 
     <!--script js file link -->
     <script src="./js/jquery.ripples-min.js"></script>
+
+    <!--  
+        -- the two taped js files is the same one is online, one is already downloaded
+    -->
+    <script src="./js/typed.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!--
+        --
+    -->
+
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/jquery.counterup.min.js"></script>
+    <script src="./js/smoothscroll.js"></script>
+    <script src="./js/jquery.ease-in.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
